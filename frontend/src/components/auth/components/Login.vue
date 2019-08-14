@@ -83,10 +83,6 @@ export default {
         });
     },
   },
-  created() {
-    this.user.email = 'test@test.com';
-    this.user.password = 'testons';
-  },
 };
 </script>
 
