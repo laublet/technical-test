@@ -1,0 +1,24 @@
+.ournav {
+	background-color: $color-grey;
+	border-color: transparent;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.navbar {
+  border-radius: 0%;
+}
+
+#vueChat {
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+	display: inline-block;
+  -webkit-background-clip: text;
+}
+
+.navbar-default .navbar-nav>li>a:visited,
+.navbar-default .navbar-nav>li>a:hover {
+	text-decoration: underline;
+}
