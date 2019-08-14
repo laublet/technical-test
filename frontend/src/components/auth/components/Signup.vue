@@ -46,7 +46,7 @@
               name="password"
               class="form-control"
               type="password"
-              placeholder="password"
+              placeholder="Must contain 5 to 10 characters"
               pattern=".{5,10}"
               title="5 to 10 characters"
               required
@@ -63,7 +63,7 @@
               class="form-control"
               name="confirmPassword"
               type="password"
-              placeholder="Enter a valid password"
+              placeholder="Confirm password"
               required
             />
           </div>

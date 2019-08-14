@@ -1,6 +1,13 @@
 # frontend
 
-> A technical test
+## To init
+
+Step 1 - Rename `.env.example` to `.env`
+
+Step 2 - Run `npm i`
+
+Step 3 - Run `npm run dev`
+
 
 ## Build Setup
 
