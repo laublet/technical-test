@@ -19,8 +19,19 @@ Vue.use(ClientTable);
 Vue.config.productionTip = false;
 
 axios.defaults.baseURL = constants.URL_BACK || 'http://localhost:3000';
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
-axios.defaults.headers.common.Authorization = localStorage.getItem('Clef');
+
+axios.interceptors.request.use(
+  config => {
+    if (!config.headers.Authorization) {
+      const token = localStorage.getItem('Clef');
+      config.headers.common.Authorization = token;
+    }
+    return config;
+  },
+  error => {
+    return Promise.reject(error);
+  }
+);
 
 new Vue({
   el: '#app',

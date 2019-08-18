@@ -19,7 +19,7 @@ export default {
     return {
       titleOne: 'Welcome',
       titleTwo: 'Here is some random string for you!',
-      random: 'Oups, something went wrong',
+      random: 'Wait for it...',
     };
   },
   methods: {

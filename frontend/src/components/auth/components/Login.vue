@@ -61,18 +61,8 @@ export default {
         .post('/users/login', this.user)
         .then(res => {
           const token = res.data.token;
-
-          new Promise((resolve, reject) => {
-            if (token) {
-              localStorage.setItem('Clef', token);
-              localStorage.setItem('User', this.user.email);
-              resolve();
-            } else {
-              reject();
-            }
-          }).then(() => {
-            this.$router.push('/home');
-          });
+          localStorage.setItem('Clef', token);
+          this.$router.push('/home');
         })
         .catch(error => {
           Swal.fire({

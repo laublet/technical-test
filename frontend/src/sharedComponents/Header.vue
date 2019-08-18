@@ -38,14 +38,11 @@
 export default {
   name: 'Header',
   data() {
-    return {
-      User: localStorage.getItem('User'),
-    };
+    return {};
   },
   methods: {
     routerLogout() {
       localStorage.removeItem('Clef');
-      localStorage.removeItem('User');
       this.$router.push({ name: 'login' });
     },
     Token() {
