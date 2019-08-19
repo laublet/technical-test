@@ -11,14 +11,11 @@
 		position: relative;
 	}
 
-	//Cause problems with Chrome ATM
-	// &:hover {
-	// 	transform: translateY(-0.5rem);
-	// 	box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
-	// }
+	&:hover {
+		transform: translateY(-0.5rem);
+	}
 
 	&:active {
-		transform: translateY(-0.1rem);
 		box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 	}
 
