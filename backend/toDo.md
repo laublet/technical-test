@@ -4,3 +4,4 @@
 4 - Docker
 5 - Use nps
 6 - Add ACL
+7 - When avatar changed, delete old avatar. Same when profile deleted
