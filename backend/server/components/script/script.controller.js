@@ -34,6 +34,7 @@ function runScript() {
 }
 
 function launchScript(req, res, next) {
+  console.log('test');
   runScript()
     .then(output => {
       return res.status(200).json(output);
